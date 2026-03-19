@@ -1,0 +1,26 @@
+a = int(input())
+b = int(input())
+c = int(input())
+num = a*b*c
+L = []
+L.append(num%10)
+L.append(num//10%10)
+L.append(num//100%10)
+L.append(num//1000%10)
+L.append(num//10000%10)
+L.append(num//100000%10)
+L.append(num//1000000%10)
+if(num//10000000):
+    L.append(num//10000000%10)
+if(num//100000000):
+    L.append(num//100000000%10)
+print(L.count(0))
+print(L.count(1))
+print(L.count(2))
+print(L.count(3))
+print(L.count(4))
+print(L.count(5))
+print(L.count(6))
+print(L.count(7))
+print(L.count(8))
+print(L.count(9))
